@@ -5,6 +5,6 @@ namespace ApiRest_Clients.Services
 {
     public interface ILoginService
     {
-        public Task<Administrator?> GetAdmin(AdministratorDTO administrator);
+        public Task<Administrator?> GetAdmin(AdministratorDTO admin);
     }
 }

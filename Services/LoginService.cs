@@ -12,9 +12,9 @@ namespace ApiRest_Clients.Services
             _context = context;
         }
 
-        public async Task<Administrator?> GetAdmin(AdministratorDTO administrator)
+        public async Task<Administrator?> GetAdmin(AdministratorDTO admin)
         {
-            return await _context.Administrator.SingleOrDefaultAsync(x => x.Email == administrator.Email && x.Pwd == administrator.Pwd);
+            return await _context.Administrator.SingleOrDefaultAsync(x => x.Email == admin.Email && x.Pwd == admin.Pwd);
         }
     }
 }
